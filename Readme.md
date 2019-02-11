@@ -1,8 +1,8 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Маркова Алёна](https://github.com/Mehanica).
-* Наставник: [Марков Алексей] (https://github.com/Eyespot).
-
+* Наставник: [Марков Алексей ] (https://github.com/Eyespot).
+:)
 ---
 
 **Обратите внимание на файл:**
