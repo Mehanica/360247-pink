@@ -1,8 +1,8 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Алексей Марков](https://up.htmlacademy.ru/adaptive/12/user/360247).
-* Наставник: `Неизвестно`.
-
+* Студент: [Маркова Алёна](https://htmlacademy.ru/profile/id768593).
+* Наставник: [Марков Алексей](https://htmlacademy.ru/profile/id360247).
+;)
 ---
 
 **Обратите внимание на файл:**
