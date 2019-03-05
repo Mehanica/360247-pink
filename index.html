@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк</title>
   </head>
   <body>
     <header class="page-header">
@@ -27,9 +27,9 @@
         </div>
       </nav>
     </header>
-    <main class="wraper">
+    <main class="page-wrapper">
       <section class="loading-block">
-        <h2 class="loading-block__title">Скачать приложение</h1> <!--будет скрыт-->
+        <h2 class="loading-block__title">Скачать приложение</h2> <!--будет скрыт-->
 
         <a class="loading-block__btn btn btn--invert" href="https://www.apple.com/itunes/">Скачать приложение</a>
 
@@ -45,11 +45,11 @@
           <img class="loading-block__item-picture" src="" alt="" width="" height="">
         </a>
 
-        <p class="loading-class__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="loading-block__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__title">Наши преимущества</h1> <!--будет скрыт-->
+        <h2 class="advantages__title">Наши преимущества</h2> <!--будет скрыт-->
 
         <p class="advantages__promo">Устали от серости мегаполиса?</p>
 
@@ -57,18 +57,18 @@
 
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__item-title"><strong>Поднимает настроение</strong></h3>
-            <p class="advantages__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="advantages__title"><strong>Поднимает настроение</strong></h3>
+            <p class="advantages__note">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
 
           <li class="advantages__item">
-            <h3 class="advantages__item-title"><strong>Меняет мир вокруг</strong></h3>
-            <p class="advantages__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="advantages__title"><strong>Меняет мир вокруг</strong></h3>
+            <p class="advantages__note">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
 
           <li class="advantages__item">
-            <h3 class="advantages__item-title"><strong>Заводит новых друзей</strong></h3>
-            <p class="advantages__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="advantages__title"><strong>Заводит новых друзей</strong></h3>
+            <p class="advantages__note">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
@@ -79,9 +79,9 @@
 
           <div class="reviews__slider-wrapper slider">
 
-            <div class="reviews__list-wrapper slider-wrapper">
+            <div class="reviews__list-wrapper slider__wrapper">
               <blockquote class="reviews__item slider__item">
-                <cite class="reviews__athor-name">Николай Петров</cite>
+                <cite class="reviews__author-name">Николай Петров</cite>
                 <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
                 </p>
               </blockquote>
@@ -89,9 +89,9 @@
 
             <div class="reviews__pagination slider__pagination">
 
-              <span class="slider__pagination-item slider__pagination-item--active"></span>
-              <span class="slider__pagination-item"></span>
-              <span class="slider__pagination-item"></span>
+              <span class="slider__item slider__item--active"></span>
+              <span class="slider__item"></span>
+              <span class="slider__item"></span>
 
             </div>
 
@@ -104,70 +104,70 @@
           <h2 class="price__title">Тарифы</h2> <!--будет скрыт-->
 
           <div class="price__slider-wrapper slider">
-            <ul class="price__list-wrapper slider-wrapper">
+            <ul class="price__list-wrapper slider__wrapper">
 
-              <li class="price__list price__inner">
-                <table>
-                  <caption>БАЗА
-                    <p>1,99 USD</p>
+              <li class="price__list slider__item">
+                <table class="price__offer">
+                  <caption class="price__title">БАЗА
+                    <p class="price__value">1,99 USD</p>
                   </caption>
-                    <tr>
-                      <td>РОЗОВЫЙ ФИЛЬТР</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">РОЗОВЫЙ ФИЛЬТР</td>
+                      <td class="price__option price__option--yes"></td>
                     </tr>
 
-                    <tr>
-                      <td>СМАЙЛИКИ</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">СМАЙЛИКИ</td>
+                      <td class="price__option price__option--no"></td>
                     </tr>
 
-                    <tr>
-                      <td>КОМЕНТАРИИ</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">КОМЕНТАРИИ</td>
+                      <td class="price__option price__option--no"></td>
                     </tr>
                 </table>
               </li>
 
-              <li class="price__list price__inner">
-                <table>
-                  <caption>СТАНДАРТ
-                    <p>3,99 USD</p>
+              <li class="price__list slider__item">
+                <table class="price__offer">
+                  <caption class="price__title price__title--hit">СТАНДАРТ
+                    <p class="price__value">3,99 USD</p>
                   </caption>
-                    <tr>
-                      <td>РОЗОВЫЙ ФИЛЬТР</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">РОЗОВЫЙ ФИЛЬТР</td>
+                      <td class="price__option price__option--yes"></td>
                     </tr>
 
-                    <tr>
-                      <td>СМАЙЛИКИ</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">СМАЙЛИКИ</td>
+                      <td class="price__option price__option--yes"></td>
                     </tr>
 
-                    <tr>
-                      <td>КОМЕНТАРИИ</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">КОМЕНТАРИИ</td>
+                      <td class="price__option price__option--no"></td>
                     </tr>
                 </table>
               </li>
 
-              <li class="price__list price__inner">
-                <table>
-                  <caption>АНЛИМ
-                    <p>9,99 USD</p>
+              <li class="price__list slider__item">
+                <table class="price__offer">
+                  <caption class="price__title">АНЛИМ
+                    <p class="price__value">9,99 USD</p>
                   </caption>
-                    <tr>
-                      <td>РОЗОВЫЙ ФИЛЬТР</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">РОЗОВЫЙ ФИЛЬТР</td>
+                      <td class="price__option price__option--yes"></td>
                     </tr>
 
-                    <tr>
-                      <td>СМАЙЛИКИ</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">СМАЙЛИКИ</td>
+                      <td class="price__option price__option--yes"></td>
                     </tr>
 
-                    <tr>
-                      <td>КОМЕНТАРИИ</td>
-                      <td></td>
+                    <tr class="price__option-wrap">
+                      <td class="price__option-name">КОМЕНТАРИИ</td>
+                      <td class="price__option price__option--yes"></td>
                     </tr>
                 </table>
               </li>
@@ -176,9 +176,9 @@
           </div>
 
           <div class="price__pagination slider__pagination">
-            <span class="slider__pagination-item"></span>
-            <span class="slider__pagination-item slider__pagination-item--active"></span>
-            <span class="slider__pagination-item"></span>
+            <span class="slider__item"></span>
+            <span class="slider__item slider__item--active"></span>
+            <span class="slider__item"></span>
           </div>
 
         </div>
@@ -187,8 +187,8 @@
       <section class="contacts">
         <h2 class="contacts__title">Наши контакты</h2> <!--будет скрыто-->
 
-        <div class="contacts__descr">
-          <div class="contacts__descr-inner">
+        <div class="contacts__note">
+          <div class="contacts__inner">
             <span>Остались вопросы? Свяжитесь с нами!</span>
 
             <p class="contacts__element">
@@ -208,8 +208,8 @@
           </div>
         </div>
 
-        <section class="contacts__map">
-          <h3 class="contacts__map-title">Карта с адресом</h3>
+        <section class="contacts__map map">
+          <h3 class="map__title">Карта с адресом</h3>
 
           <iframe src="" width="" height=""></iframe>
         </section>

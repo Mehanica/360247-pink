@@ -2,12 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк-Конкурс</title>
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
       <div class="page-header__logo">
         <a class="page-header__logo-link" href="index.html"><img src="http://placehold.it/150x100"></a>
       </div>
@@ -28,103 +26,112 @@
       </nav>
     </header>
 
-    <main class="form-page-wrap">
+    <main class="page-wrapper">
+      <section class="page-title">
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+
       <section class="promo-block">
         <h2 class="promo-block__title">Конкурс с призами</h2> <!--будет скрыт-->
 
-        <div class="promo-block__descr">
+        <div class="promo-block__description">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         </div>
       </section>
 
-      <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="competition-form__name-block">
-          <label class="field-text competition-form__field" for="surname">ФАМИЛИЯ:</label>
-          <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" repuired>
+      <form class="promo-lottery-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="promo-lottery-form__name-block">
+          <label class="field-text promo-lottery-form__field-text" for="surname">ФАМИЛИЯ:
+            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" repuired>
+          </label>
 
-          <label class="field-text competition-form__field" for="name">ИМЯ:</label>
-          <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" id="name" repuired>
+          <label class="field-text promo-lottery-form__field-text" for="name">ИМЯ:
+            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" id="name" repuired>
+          </label>
 
-          <label class="field-text competition-form__field" for="patronymic">ОТЧЕСТВО:</label>
+          <label class="field-text promo-lottery-form__field-text" for="patronymic">ОТЧЕСТВО:>
           <input class="field-text__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
-        </div>
-
-        <div class="сompetition-form__progress-checkbox-block">
-          <span class="competition-form__progress-checkbox-title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</span>
-
-          <p class="competition-form__progress">
-            <label class="competition-form__progress-checkbox">
-              <input type="checkbox" name="shark-selfie" checked>
-              <span class="competition-form__checkbox-caption">Сделал селфи с акулой</span>
-            </label>
-
-            <label class="competition-form__progress-checkbox">
-              <input type="checkbox" name="burned-on-the-beach" checked>
-              <span class="competition-form__checkbox-caption">Обгорел на пляже</span>
-            </label>
-
-            <label class="competition-form__progress-checkbox">
-              <input type="checkbox" name="saw-Chuck-Norris">
-              <span class="competition-form__checkbox-caption">Видел Чака Норриса</span>
-            </label>
-
-            <label class="competition-form__progress-checkbox">
-              <input type="checkbox" name="bought-souvenirs">
-              <span class="competition-form__checkbox-caption">Накупил сувениров</span>
-            </label>
-
-            <label class="competition-form__progress-checkbox">
-              <input type="checkbox" name="kept-the-tower" checked>
-              <span class="competition-form__checkbox-caption">Удержал башню</span>
-            </label>
-
-            <label class="competition-form__progress-checkbox">
-              <input type="checkbox" name="crushed-the-hotel">
-              <span class="competition-form__checkbox-caption">Разгромил отель</span>
-            </label>
-          </p>
-        </div>
-
-        <div class="competition-form__contacts-block">
-          <label class="field-text competition-form__contacts-tel" for="tel">НОМЕР ТЕЛЕФОНА</label>
-          <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
-
-          <label class="field-text competition-form__contacts-mail" for="mail">АДРЕС ПОЧТЫ</label>
-          <input class="field-text__input" type="email" name="email" placeholder="Введите почту *" required>
-        </div>
-
-        <div class="competition-form__application-radio-block">
-          <span class="competition-form__application-radio-title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</span>
-
-          <p class="competition-form__application">
-            <label class="competition-form__application-radio">
-              <input type="radio" name="Pink-iOS" checked>
-              <span class="competition-form__radio-caption">Pink для iOS</span>
-            </label>
-
-            <label class="competition-form__application-radio">
-              <input type="radio" name="Pink-Android">
-              <span class="competition-form__radio-caption">Pink на Android</span>
-            </label>
-
-            <label class="competition-form__application-radio">
-              <input type="radio" name="WindowsPhone">
-              <span class="competition-form__radio-caption">Widnows Phone</span>
-            </label>
-          </p>
-        </div>
-
-        <div class="competition-form__comments-block">
-          <label class="field-text competition-form__comments-field competition-form__comments-field--wide">ОПИШИТЕ СВОИ ЭМОЦИИ
-            <textarea class="field-text__input" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </label>
         </div>
 
-        <div class="competition-form__button">
-          <button class="form-btn competition-form__btn" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+        <div class="promo-lottery-form__trip-achievements-checkbox-block">
+          <span class="promo-lottery-form__trip-achivements-checkbox-title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</span>
+
+          <p class="promo-lottery-form__trip-achivements">
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="shark-selfie" checked>
+              <span class="trip-achivement-checkbox__caption">Сделал селфи с акулой</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-ahcivement-checkbox__input" type="checkbox" name="burned-on-the-beach" checked>
+              <span class="trip-achivement-checkbox__caption">Обгорел на пляже</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="saw-Chuck-Norris">
+              <span class="trip-achivement-checkbox__caption">Видел Чака Норриса</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="bought-souvenirs">
+              <span class="trip-achivement-checkbox__caption">Накупил сувениров</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="kept-the-tower" checked>
+              <span class="trip-achivement-checkbox__caption">Удержал башню</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="crushed-the-hotel">
+              <span class="trip-achivement-checkbox__caption">Разгромил отель</span>
+            </label>
+          </p>
         </div>
 
-        <p class="competition-form__footnote"><span style="color: #d22856">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+        <div class="promo-lottery-form__contacts-block">
+          <label class="contacts-field-text promo-lottery-form__contacts-tel">НОМЕР ТЕЛЕФОНА
+            <input class="contacts-field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </label>
+
+          <label class="contact-field-text promo-lottery-form__contacts-mail">АДРЕС ПОЧТЫ
+            <input class="contact-field-text__input" type="email" name="email" placeholder="Введите почту *" required>
+          </label>
+        </div>
+
+        <div class="promo-lottery-form__application-radio-block">
+          <span class="promo-lottery-form__application-radio-title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</span>
+
+          <p class="promo-lottery-form__application">
+            <label class="application-radio promo-lottery-form__field-radio">
+              <input class="application-radio__input" type="radio" name="Pink-iOS" checked>
+              <span class="application-radio__caption">Pink для iOS</span>
+            </label>
+
+            <label class="application-radio promo-lottery-form__field-radio">
+              <input class="application-radio__input" type="radio" name="Pink-Android">
+              <span class="application-radio__caption">Pink на Android</span>
+            </label>
+
+            <label class="application-radio promo-lottery-form__field-radio">
+              <input class="application-radio__input" type="radio" name="WindowsPhone">
+              <span class="application-radio__caption">Widnows Phone</span>
+            </label>
+          </p>
+        </div>
+
+        <div class="promo-lottery-form__comments-block">
+          <label class="comments-field-text promo-lottery-form__comments-field promo-lottery-form__comments-field--wide">ОПИШИТЕ СВОИ ЭМОЦИИ
+            <textarea class="comments-field-text__input" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </div>
+
+        <div class="promo-lottery-form__button">
+          <button class="form-btn promo-lottery-form__btn" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+        </div>
+
+        <p class="promo-lottery-form__footnote"><span style="color: #d22856">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
       </form>
     </main>
 
