@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк-Конкурс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html"><img src="http://placehold.it/150x100"></a>
+      </div>
+
+      <nav class="main-nav"> <!--main-nav--open -для открытого состояния меню-->
+        <span class="main-nav__toogler"><span></span></span>
+
+        <div class="main-nav__wrapper">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="">ГЛАВНАЯ</a></li>
+            <li class="main-nav__item"><a href="">ФОТОГРАФИИ</a></li>
+            <li class="main-nav__item"><a href="">КОНКУРС</a></li>
+            <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-wrapper">
+      <section class="page-title">
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+
+      <section class="promo-block">
+        <h2 class="promo-block__title">Конкурс с призами</h2> <!--будет скрыт-->
+
+        <div class="promo-block__description">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        </div>
+      </section>
+
+      <form class="promo-lottery-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="promo-lottery-form__name-block">
+          <label class="field-text promo-lottery-form__field-text" for="surname">ФАМИЛИЯ:
+            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" repuired>
+          </label>
+
+          <label class="field-text promo-lottery-form__field-text" for="name">ИМЯ:
+            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" id="name" repuired>
+          </label>
+
+          <label class="field-text promo-lottery-form__field-text" for="patronymic">ОТЧЕСТВО:>
+          <input class="field-text__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
+          </label>
+        </div>
+
+        <div class="promo-lottery-form__trip-achievements-checkbox-block">
+          <span class="promo-lottery-form__trip-achivements-checkbox-title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</span>
+
+          <p class="promo-lottery-form__trip-achivements">
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="shark-selfie" checked>
+              <span class="trip-achivement-checkbox__caption">Сделал селфи с акулой</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-ahcivement-checkbox__input" type="checkbox" name="burned-on-the-beach" checked>
+              <span class="trip-achivement-checkbox__caption">Обгорел на пляже</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="saw-Chuck-Norris">
+              <span class="trip-achivement-checkbox__caption">Видел Чака Норриса</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="bought-souvenirs">
+              <span class="trip-achivement-checkbox__caption">Накупил сувениров</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="kept-the-tower" checked>
+              <span class="trip-achivement-checkbox__caption">Удержал башню</span>
+            </label>
+
+            <label class="trip-achivement-checkbox promo-lottery-form__field-checkbox">
+              <input class="trip-achivement-checkbox__input" type="checkbox" name="crushed-the-hotel">
+              <span class="trip-achivement-checkbox__caption">Разгромил отель</span>
+            </label>
+          </p>
+        </div>
+
+        <div class="promo-lottery-form__contacts-block">
+          <label class="contacts-field-text promo-lottery-form__contacts-tel">НОМЕР ТЕЛЕФОНА
+            <input class="contacts-field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </label>
+
+          <label class="contact-field-text promo-lottery-form__contacts-mail">АДРЕС ПОЧТЫ
+            <input class="contact-field-text__input" type="email" name="email" placeholder="Введите почту *" required>
+          </label>
+        </div>
+
+        <div class="promo-lottery-form__application-radio-block">
+          <span class="promo-lottery-form__application-radio-title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</span>
+
+          <p class="promo-lottery-form__application">
+            <label class="application-radio promo-lottery-form__field-radio">
+              <input class="application-radio__input" type="radio" name="Pink-iOS" checked>
+              <span class="application-radio__caption">Pink для iOS</span>
+            </label>
+
+            <label class="application-radio promo-lottery-form__field-radio">
+              <input class="application-radio__input" type="radio" name="Pink-Android">
+              <span class="application-radio__caption">Pink на Android</span>
+            </label>
+
+            <label class="application-radio promo-lottery-form__field-radio">
+              <input class="application-radio__input" type="radio" name="WindowsPhone">
+              <span class="application-radio__caption">Widnows Phone</span>
+            </label>
+          </p>
+        </div>
+
+        <div class="promo-lottery-form__comments-block">
+          <label class="comments-field-text promo-lottery-form__comments-field promo-lottery-form__comments-field--wide">ОПИШИТЕ СВОИ ЭМОЦИИ
+            <textarea class="comments-field-text__input" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </div>
+
+        <div class="promo-lottery-form__button">
+          <button class="form-btn promo-lottery-form__btn" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+        </div>
+
+        <p class="promo-lottery-form__footnote"><span style="color: #d22856">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__logo">
+          <a class="page-footer__logo-link" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип Пинк" width="" height=""></a>
+        </p>
+
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+
+            <a class="social-link social-link-fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+
+            <a class="social-link social-link--ytb" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
+          </span>
+        </p>
+
+        <p class="page-footer__copyright">
+            Разработано
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </p>
+      </div>
+    </footer>
+
+    <section class="pop-up pop-up-request pop-up--show">
+      <form class="pop-up-request__form">
+        <h3 class="pop-up-request__title">Ваша заявка отправлена</h3>
+
+        <p class="pop-up-request__clarification">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+
+        <div class="pop-up-request__button">
+          <button class="form-btn pop-up-request__btn" type="button">ЗАКРЫТЬ ОКНО</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="pop-up pop-up-failure pop-up--show">
+      <form class="pop-up-failure__form">
+        <h3 class="pop-up-failure__title">Что-то пошло не так!</h3>
+
+        <p class="pop-up-failure__clarification">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+        <div class="pop-up-failure__button">
+          <button class="form-btn pop-up-failure__btn" type="button">OK</button>
+        </div>
+      </form>
+    </section>
+  </body>
