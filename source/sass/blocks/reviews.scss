@@ -1,0 +1,14 @@
+.reviews {
+  outline: 2px solid slateblue;
+}
+
+.reviews__author-name {
+  font-size: $font-size-big;
+  line-height: 30px / $font-size-big;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__title {
+  @include visually-hidden;
+}

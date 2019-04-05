@@ -1,0 +1,29 @@
+.content-heading {
+  outline: 2px solid red;
+  margin: 0 -20px;
+  min-height: 462px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-size: auto 462px;
+  background-repeat: no-repeat;
+
+  &--index-page {
+    background-image: url("../img/iphone-hand-mobile@1x.png"),
+                      url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom left 0,
+                         center;
+    background-size: auto 286px,
+                     auto 462px;
+    background-repeat: no-repeat;
+  }
+}
+
+.content-heading__title {
+  font-size: $font-size-bigger;
+  font-weight: 300;
+  color: $color-main-invert-text;
+}
+
+.content-heading--index-page {
+  @include visually-hidden;
+}

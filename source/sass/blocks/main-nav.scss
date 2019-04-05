@@ -1,0 +1,19 @@
+.main-nav {
+  outline: 2px solid greenyellow;
+}
+
+.main-nav__wrapper {
+  background-color: $color-background-darker;
+}
+
+.main-nav__list {
+  font-size: $font-size-big;
+  line-height: 32px / $font-size-big;
+  font-weight: 700;
+  list-style: none;
+}
+
+.main-nav__list a {
+ color: $color-main-invert-text;
+ text-decoration: none;
+}

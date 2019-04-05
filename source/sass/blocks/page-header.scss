@@ -1,0 +1,16 @@
+.page-header {
+  outline: 3px solid pink;
+  margin: 0 -20px;
+  padding: 0 20px;
+  background-color: $color-background-dark-opacity;
+}
+
+.page-header__title {
+  @include visually-hidden;
+}
+
+.page-header__logo {
+  outline: 2px solid fuchsia;
+  padding-top: 40px ;
+  padding-bottom: 20px;
+}

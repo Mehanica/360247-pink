@@ -1,0 +1,16 @@
+.loading-block {
+  outline: 2px solid blueviolet;
+  margin: 0 -20px;
+  padding: 28px 20px;
+  background-color: $color-background-dark;
+}
+
+.loading-block__description {
+  line-height: 24px / $font-size-main;
+  font-weight: 300;
+  color: $color-main-invert-text;
+}
+
+.loading-block__title {
+  @include visually-hidden;
+}

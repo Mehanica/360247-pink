@@ -1,0 +1,33 @@
+.contacts {
+  outline: 2px solid blueviolet;
+}
+
+.contacts span {
+  font-size: $font-size-bigger;
+  font-weight: 300;
+}
+
+.contacts__element {
+  font-size: $font-size-big;
+  font-weight: 700;
+}
+
+.contacts a {
+  font-size: $font-size-bigger;
+  font-weight: 300;
+  text-decoration: none;
+  color: $color-secondary-text;
+}
+
+.contacts__title {
+  @include visually-hidden;
+}
+
+.contacts__inner span {
+  outline: 2px solid salmon;
+}
+
+.contacts__map {
+  outline: 2px solid black;
+  margin: 0 -20px;
+}

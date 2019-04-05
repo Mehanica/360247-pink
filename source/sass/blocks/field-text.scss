@@ -1,0 +1,12 @@
+.field-text {
+  color: $color-secondary-text;
+}
+
+.field-text__input {
+  font-size: $font-size-big;
+  color: $color-main-text;
+}
+
+.field-text__input::placeholder {
+  color: $color-main-text;
+}

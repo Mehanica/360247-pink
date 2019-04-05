@@ -1,0 +1,25 @@
+.price {
+  outline: 2px solid yellowgreen;
+  margin: 0 -20px;
+  background-color: $color-secondary-background;
+}
+
+.price__title {
+  @include visually-hidden;
+}
+
+.price__offer-title {
+  font-size: $font-size-big;
+  font-weight: 700;
+  background-color: $color-background-darker;
+  color: $color-main-invert-text;
+}
+
+.price__value {
+  font-size: $font-size-bigger;
+  font-weight: 300;
+}
+
+.price__list-wrapper {
+  list-style: none;
+}

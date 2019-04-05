@@ -1,0 +1,40 @@
+.advantages {
+margin: 0 -20px;
+}
+
+.advantages__list {
+  outline: 2px solid brown;
+  margin: 0;
+  min-height: 828px;
+  list-style: none;
+  background-color: $color-secondary-background;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: auto 320px;
+  background-position: bottom;
+}
+
+.advantages__promo {
+  outline: 2px solid cornflowerblue;
+  margin: 38px;
+  font-size: $font-size-bigger;
+  font-weight: 300;
+}
+
+.advantages__note {
+  font-weight: 300;
+}
+
+.advantages__title {
+  @include visually-hidden;
+}
+
+.advantages__list {
+  outline: 2px solid chartreuse;
+}
+
+.advantages__item {
+  outline: 2px solid red;
+  padding: 20px;
+}
+

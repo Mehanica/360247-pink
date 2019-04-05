@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк-Фото</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__logo-link" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип Пинк" width="" height=""></a>
+        <a class="page-header__logo-link" href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="75" height="22">
+        </a>
       </div>
 
       <nav class="main-nav"> <!--main-nav--open -для открытого состояния меню-->
@@ -27,18 +30,20 @@
     </header>
 
     <main class="page-wrapper">
-      <section class="page-title">
-        <h1 class="page-header__title">Фотографии пользователей</h1>
+      <section class="content-heading">
+        <h1 class="content-heading__title">Фотографии пользователей</h1>
       </section>
 
       <section class="gallery">
         <h2 class="gallery__title">Фотографии пользователей</h2>
 
-        <p class="gallery__promo-text promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватаетваших?</p>
+        <div class="promo-text">
+          <p class="promo-text__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватаетваших?</p>
+        </div>
 
-        <blockquote class="gallery-photo photo photo--panorama-of-the-day">
+        <blockquote class="gallery__photo photo photo--panorama-of-the-day">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img class="photo__panorama-of-the-day" src="img/panorama-mobile@1x.jpg" alt="Панорама дня" width="320" height="137"></a>
           </div>
 
           <div class="photo__info">
@@ -56,9 +61,9 @@
           </div>
         </blockquote>
 
-        <blockquote class="gallery gallery-photo">
+        <blockquote class="gallery__photo photo">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img src="img/photo-1-mobile@1x.jpg" alt="фото пользователя" width="280" height="180"></a>
           </div>
 
           <div class="photo__info">
@@ -76,9 +81,9 @@
           </div>
         </blockquote>
 
-        <blockquote class="gallery gallery-photo">
+        <blockquote class="gallery__photo photo">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img src="img/photo-2-mobile@1x.jpg" alt="фото пользователя" width="280" height="180"></a>
           </div>
 
           <div class="photo__info">
@@ -96,9 +101,9 @@
           </div>
         </blockquote>
 
-        <blockquote class="gallery gallery-photo">
+        <blockquote class="gallery__photo photo">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img src="img/photo-3-mobile@1x.jpg" alt="фото пользователя" width="280" height="180"></a>
           </div>
 
           <div class="photo__info">
@@ -116,9 +121,9 @@
           </div>
         </blockquote>
 
-        <blockquote class="gallery gallery-photo">
+        <blockquote class="gallery__photo photo">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img src="img/photo-4-mobile@1x.jpg" alt="фото пользователя" width="280" height="180"></a>
           </div>
 
           <div class="photo__info">
@@ -136,9 +141,9 @@
           </div>
         </blockquote>
 
-        <blockquote class="gallery gallery-photo">
+        <blockquote class="gallery__photo photo">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img src="img/photo-5-mobile@1x.jpg" alt="фото пользователя" width="280" height="180"></a>
           </div>
 
           <div class="photo__info">
@@ -156,9 +161,9 @@
           </div>
         </blockquote>
 
-        <blockquote class="gallery gallery-photo">
+        <blockquote class="gallery__photo photo">
           <div class="photo__wrap">
-            <a href="#"><img src="" alt="" width="" height=""></a>
+            <a href="#"><img src="img/photo-6-mobile@1x.jpg" alt="фото пользователя" width="280" height="180"></a>
           </div>
 
           <div class="photo__info">
@@ -181,18 +186,24 @@
 
       <section class="photo-upload">
         <div class="photo-upload__wrap">
-          <img class="photo-upload__image" src="" alt="" width="" height="">
+          <img class="photo-upload__image" src="img/photo-7-mobile@1x.jpg" alt="ваше фото" width="280" height="374">
 
           <form class="photo-upload__tools">
             <div class="photo-upload__inner">
-              <span class="photo-upload__tool photo-processing__tool--active"></span>
-              <input type="range">
+              <label class="range photo-upload__range">
+                <span class="range__tool range__tool--active"></span>
+                <input type="range__input">
+              </label>
 
-              <span class="photo-upload__tool"></span>
-              <input type="range">
+              <label class="range photo-upload__range">
+                <span class="range__tool"></span>
+                <input type="range__input">
+              </label>
 
-              <span class="photo-upload__tool"></span>
-              <input type="range">
+              <label class="range photo-upload__range">
+                <span class="range__tool"></span>
+                <input type="range__input">
+              </label>
             </div>
 
             <div class="photo-upload__form-buttons">
@@ -208,14 +219,14 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <p class="page-footer__logo">
-          <a class="page-footer__logo-link" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип Пинк" width="" height=""></a>
+          <a class="page-footer__logo-link" href="index.html"><img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" width="147" height="40"></a>
         </p>
 
         <p class="page-footer__social">
           <span class="social-links">
             <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
 
-            <a class="social-link social-link-fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
 
             <a class="social-link social-link--ytb" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
           </span>
@@ -228,4 +239,5 @@
       </div>
     </footer>
   </body>
+</html>
 

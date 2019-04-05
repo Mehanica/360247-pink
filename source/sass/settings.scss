@@ -1,0 +1,26 @@
+// colors
+$color-main-text: #283645;
+$color-main-invert-text: #ffffff;
+$color-secondary-text: #d22856;
+$color-main-background: #ffffff;
+$color-secondary-background: #f2f2f2;
+$color-background-dark: rgba(29, 38, 49, 1);
+$color-background-dark-opacity: rgba(29, 38, 49, 0.3);
+$color-background-darker: #283645;
+$color-background-square-btn: #2aab6d;
+
+// fonts
+$font-size-main: 14px;
+$font-size-big: 18px;
+$font-size-bigger: 24px;
+$font-size-small: 12px;
+
+
+// mixins
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

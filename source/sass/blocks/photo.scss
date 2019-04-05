@@ -1,0 +1,27 @@
+.photo__info {
+  background-color: $color-secondary-background;
+}
+
+.photo__note {
+  line-height: 24px / $font-size-main;
+}
+
+.photo__likes-wrap span {
+  font-size: $font-size-small;
+  line-height: 24px / $font-size-small;
+  color: $color-secondary-text;
+}
+
+.photo__panorama-of-the-day {
+  margin: 0 -20px;
+}
+
+.photo__wrap {
+  outline: 2px solid seagreen;
+  margin: 0;
+  padding: 0;
+}
+
+.photo__wrap a{
+  display: flex;
+}
